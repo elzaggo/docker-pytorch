@@ -13,6 +13,11 @@ RUN python3 -m pip install torch torchvision
 
 RUN rm -rf /root/.cache
 
+RUN jupyter notebook --generate-config
+RUN echo "c.NotebookApp.ip = '0.0.0.0'" >> /root/.jupyter/jupyter_notebook_config.py
+
+EXPOSE 8888
+
 
 
 
