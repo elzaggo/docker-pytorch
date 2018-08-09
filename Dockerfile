@@ -10,6 +10,7 @@ RUN python3 -m pip install pip --upgrade
 
 RUN python3 -m pip install jupyter
 RUN python3 -m pip install torch torchvision
+RUN python3 -m pip install matplotlib
 
 RUN rm -rf /root/.cache
 
